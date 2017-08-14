@@ -149,6 +149,78 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-方便多台电脑发表博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/30/方便多台电脑发表博客/">多台电脑发表博客</a>
+    </h1>
+  
+
+        
+        <a href="/2017/03/30/方便多台电脑发表博客/" class="archive-article-date">
+  	<time datetime="2017-03-30T08:15:36.921Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>创建仓库，xxx.github.io；</li>
+<li>创建两个分支：master 与 hexo-source；</li>
+<li>设置hexo-source为默认分支（因为我们只需要手动管理这个分支上的Hexo网站文件）；</li>
+<li>使用git clone git@github.com:xxx/xxx.github.io.git拷贝仓库；</li>
+<li>在本地xxx.github.io文件夹下通过Git bash依次执行npm install hexo、hexo init、npm install 和 npm install hexo-deployer-git（此时当前分支应显示为hexo-source）;</li>
+<li>修改_config.yml中的deploy参数，分支应为master；(重要)</li>
+<li>依次执行git add .、git commit -m “…”、git push origin hexo提交网站相关的文件；</li>
+<li>执行hexo generate -d生成网站并部署到GitHub上。</li>
+</ol>
+<p>这样一来，在GitHub上的xxx.github.io仓库就有两个分支，一个hexo-source分支用来存放网站的原始文件，一个master分支用来存放生成的静态网页。完美( •̀ ω •́ )y！</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">skill</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/03/30/方便多台电脑发表博客/">more >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-广告创意之--王老吉" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -194,68 +266,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/03/30/广告创意之--王老吉/">more >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-ios系统解锁字滑动效果" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/30/ios系统解锁字滑动效果/">ios系统解锁字滑动效果</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/30/ios系统解锁字滑动效果/" class="archive-article-date">
-  	<time datetime="2017-03-30T08:15:36.919Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">color: <span class="comment">#382385;</span></div><div class="line"></div><div class="line"> font-size: 1.4rem;  </div><div class="line"></div><div class="line"> -webkit-background-clip: text;  </div><div class="line"></div><div class="line"> -webkit-text-fill-color: transparent;</div><div class="line"></div><div class="line"> background-color:<span class="comment">#19385c;</span></div><div class="line"></div><div class="line"> background-image: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.6) 30%, <span class="comment">#aff0ff 50%, rgba(0, 0, 0, 0.6) 70%);</span></div><div class="line"></div><div class="line"> background-blend-mode: hard-light;</div><div class="line"></div><div class="line"> background-size: 200%;</div><div class="line"></div><div class="line">  -webkit-animation: shine 4s infinite;</div><div class="line"></div><div class="line">    @-webkit-keyframes shine &#123;</div><div class="line"></div><div class="line">      from &#123;background-position: 100%;&#125;</div><div class="line"></div><div class="line">      to &#123;background-position: 0;&#125;</div><div class="line"></div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">skill</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/30/ios系统解锁字滑动效果/">more >></a>
         </p>
       
 
@@ -335,6 +345,68 @@
 
 
   
+    <article id="post-ios系统解锁字滑动效果" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/30/ios系统解锁字滑动效果/">ios系统解锁字滑动效果</a>
+    </h1>
+  
+
+        
+        <a href="/2017/03/30/ios系统解锁字滑动效果/" class="archive-article-date">
+  	<time datetime="2017-03-30T08:15:36.919Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">color: <span class="comment">#382385;</span></div><div class="line"></div><div class="line"> font-size: 1.4rem;  </div><div class="line"></div><div class="line"> -webkit-background-clip: text;  </div><div class="line"></div><div class="line"> -webkit-text-fill-color: transparent;</div><div class="line"></div><div class="line"> background-color:<span class="comment">#19385c;</span></div><div class="line"></div><div class="line"> background-image: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.6) 30%, <span class="comment">#aff0ff 50%, rgba(0, 0, 0, 0.6) 70%);</span></div><div class="line"></div><div class="line"> background-blend-mode: hard-light;</div><div class="line"></div><div class="line"> background-size: 200%;</div><div class="line"></div><div class="line">  -webkit-animation: shine 4s infinite;</div><div class="line"></div><div class="line">    @-webkit-keyframes shine &#123;</div><div class="line"></div><div class="line">      from &#123;background-position: 100%;&#125;</div><div class="line"></div><div class="line">      to &#123;background-position: 0;&#125;</div><div class="line"></div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">skill</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/03/30/ios系统解锁字滑动效果/">more >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-hexo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -397,86 +469,9 @@
 
 
   
-    <article id="post-git配置多个SSH-Key" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/30/git配置多个SSH-Key/">git配置多个SSH-Key</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/30/git配置多个SSH-Key/" class="archive-article-date">
-  	<time datetime="2017-03-30T08:15:36.917Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="具体操作步骤"><a href="#具体操作步骤" class="headerlink" title="具体操作步骤"></a>具体操作步骤</h2><h4 id="1、生成一个公司用的SSH-Key"><a href="#1、生成一个公司用的SSH-Key" class="headerlink" title="1、生成一个公司用的SSH-Key"></a>1、生成一个公司用的SSH-Key</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C &quot;youremail@yourcompany.com&quot; -f ~/.ssh/id_rsa</div></pre></td></tr></table></figure>
-<p>在~/.ssh/目录会生成id_rsa和id_rsa.pub私钥和公钥。 我们将id-rsa.pub中的内容粘帖到公司gitlab服务器的SSH-key的配置中</p>
-<h4 id="2、生成一个github用的SSH-Key"><a href="#2、生成一个github用的SSH-Key" class="headerlink" title="2、生成一个github用的SSH-Key"></a>2、生成一个github用的SSH-Key</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C &quot;youremail@your.com&quot; -f ~/.ssh/github_rsa</div></pre></td></tr></table></figure>
-<p>在~/.ssh/目录会生成github_rsa和github_rsa.pub私钥和公钥。 我们将github_rsa.pub中的内容粘帖到github服务器的SSH-key的配置中</p>
-<h4 id="3、添加私钥"><a href="#3、添加私钥" class="headerlink" title="3、添加私钥"></a>3、添加私钥</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-add ~/.ssh/id_rsa $ ssh-add ~/.ssh/github_rsa</div></pre></td></tr></table></figure>
-<p>如果执行ssh-add时提示”Could not open a connection to your authentication agent”，可以现执行命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-agent bash</div></pre></td></tr></table></figure>
-<p>然后再运行ssh-add命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># 可以通过 ssh-add -l 来确私钥列表</div><div class="line">$ ssh-add -l</div><div class="line"># 可以通过 ssh-add -D 来清空私钥列表</div><div class="line">$ ssh-add -D</div></pre></td></tr></table></figure>
-<h4 id="4、修改配置文件"><a href="#4、修改配置文件" class="headerlink" title="4、修改配置文件"></a>4、修改配置文件</h4><p>在 ~/.ssh 目录下新建一个config文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">touch config</div></pre></td></tr></table></figure>
-<p>添加内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"># gitlab</div><div class="line">Host gitlab.com</div><div class="line">    HostName gitlab.com</div><div class="line">    PreferredAuthentications publickey</div><div class="line">    IdentityFile ~/.ssh/id_rsa</div><div class="line"># github</div><div class="line">Host github.com</div><div class="line">    HostName github.com</div><div class="line">    PreferredAuthentications publickey</div><div class="line">    IdentityFile ~/.ssh/github_rsa</div></pre></td></tr></table></figure>
-<h4 id="6、测试"><a href="#6、测试" class="headerlink" title="6、测试"></a>6、测试</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@github.com</div></pre></td></tr></table></figure>
-<p>输出<br>Hi stefzhlg! You’ve successfully authenticated, but GitHub does not provide shell access.</p>
-<p>就表示成功的连上github了.也可以试试链接公司的gitlab</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-tool</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/30/git配置多个SSH-Key/">more >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
     </nav>
   
 
